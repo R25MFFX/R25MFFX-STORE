@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form Pembelian</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/1732852155211.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>FORM PEMBELIAN
+    3D INTRO V1
+  </h2>
+  <img src="assets/images/V1.png" height="150px" width="150px"><p> Tolong Isi Data-Data Seperti :<br> 1. Text Intro <br> 2. Warna Text <br> 3. Warna Efek Text <br> 4. Pembayaran Lewat E-wallet/QRIS?</p>
+
+  <form id="myForm">
+    <div class="mb-3">
+      <label for="pilihintro">Pilih Intro versi Berapa :</label>
+      <input type="text" class="form-control" id="pilihintro" placeholder="Pilih Intro Versi Berapa" name="pilihintro">
+    </div>
+
+    <div class="mb-3 mt-3">
+      <label for="textintro">Text Intro :</label>
+      <input type="text" class="form-control" id="textintro" placeholder="Masukan Text Intro Anda" name="textintro">
+    </div>
+
+    <div class="mb-3">
+      <label for="warnatext">Warna Text :</label>
+      <input type="text" class="form-control" id="warnatext" placeholder="Masukan Warna Text Anda" name="warnatext">
+    </div>
+    
+    <div class="mb-3">
+      <label for="warnaefektext">Warna Efek Text :</label>
+      <input type="text" class="form-control" id="warnaefektext" placeholder="Masukan Warna Efek Text Anda" name="warnaefektext"><br>
+      
+      <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          Pilih Pembayaran
+        </button>
+
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Payment</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <img src="assets/images/qriss.jpg" height="450px" width="450px"> <br><br>
+        <p><strong><i> Dana : 0822-9170-2525 <br>
+          Gopay : 0822-9170-2525 <br>
+          Ovo : 0822-9170-2525 </i><br></strong>
+          <strong> Note : JANGAN LUPA SERTAKAN BUKTI SCREENSHOT PEMBAYARAN!!</strong>
+        </p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+    </div>
+
+    <button type="submit" href="pembayaran.html" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
